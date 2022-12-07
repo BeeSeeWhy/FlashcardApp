@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="deck"
+            type="com.example.f_hero.DeckFrag" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choose_deck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/one_jockey"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.6"
+            android:singleLine="false"
+            android:text="@string/choose_deck"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/android_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/one_jockey"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/android"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:shapeAppearance="@style/ShapeAppearance.f_hero.pill_button"
+            app:backgroundTint="@color/white"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/create_deck_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/one_jockey"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/create_new_deck"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:shapeAppearance="@style/ShapeAppearance.f_hero.pill_button"
+            app:backgroundTint="@color/white"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black"/>
+
+    </LinearLayout>
+</layout>

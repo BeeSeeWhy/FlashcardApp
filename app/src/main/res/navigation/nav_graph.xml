@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mav_graph"
+    app:startDestination="@id/deckFrag">
+
+    <fragment
+        android:id="@+id/deckFrag"
+        android:name="com.example.f_hero.DeckFrag"
+        android:label="Flashcard Hero"
+        android:fontFamily="@font/one_jockey"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        tools:layout="@layout/frag_deck" >
+        <action
+            android:id="@+id/action_deckFrag_to_flashCardFragment"
+            app:destination="@id/flashCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flashCardFragment"
+        android:name="com.example.f_hero.FlashCardFragment"
+        android:fontFamily="@font/one_jockey"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        android:label="Flashcard Hero" >
+        <action
+            android:id="@+id/action_flashCardFragment_self"
+            app:destination="@id/flashCardFragment" />
+        <action
+            android:id="@+id/action_flashCardFragment_to_deckFrag"
+            app:destination="@id/deckFrag" />
+    </fragment>
+</navigation>
